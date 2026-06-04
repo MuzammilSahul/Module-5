@@ -26,7 +26,31 @@ To write a Python program that uses multilevel inheritance to get and display a 
    - Print all details using class methods.
 
 ## Program
-Add code here
+```
+class NAME:
+    def __init__(self,name):
+        self.name=name
+class Age(NAME):
+    def __init__(self,name,age):
+        super().__init__(name)
+        self.age=age
+class Id(Age):
+    def __init__(self,name,age,id):
+        super().__init__(name,age)
+        self.id=id
+    def diplay(self):
+        print(self.name,self.age,self.id)
+name=input()
+age=int(input())
+id=int(input())
+c=Id(name,age,id)
+c.diplay()
+```
 
 ## Sample Output
+<img width="914" height="216" alt="5d" src="https://github.com/user-attachments/assets/b9a232d4-f7a8-4045-b53f-191bc38c6e47" />
+
+## Result
+Thus the Python program that uses multilevel inheritance to get and display a person’s name, age, and location. is done and output is verified
+
 
